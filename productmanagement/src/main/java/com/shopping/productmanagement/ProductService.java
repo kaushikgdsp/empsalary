@@ -15,4 +15,6 @@ public interface ProductService  //service interface
 	
 	public Product fetchProductwithMaximumPrice();
 	
+	public Product fetchProductwithMinimumPrice();
+	
 }

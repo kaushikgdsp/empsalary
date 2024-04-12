@@ -77,4 +77,14 @@ public class ProductServiceImpl implements ProductService
 		return null;
 	}
 
+	@Override
+	public Product fetchProductwithMinimumPrice()
+	{
+		
+		
+		
+		
+		return null;
+	}
+	
 }
