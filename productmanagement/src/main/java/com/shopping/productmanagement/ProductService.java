@@ -13,4 +13,6 @@ public interface ProductService  //service interface
 	
 	public List<Product> fetchByPriceBetween(double lPrice, double uPrice);
 	
+	public Product fetchProductwithMaximumPrice();
+	
 }

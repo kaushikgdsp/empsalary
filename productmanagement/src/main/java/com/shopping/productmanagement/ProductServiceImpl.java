@@ -67,4 +67,14 @@ public class ProductServiceImpl implements ProductService
 		
 	}
 	
+	@Override
+	public Product fetchProductwithMaximumPrice()
+	{
+		
+		
+		
+		
+		return null;
+	}
+
 }
