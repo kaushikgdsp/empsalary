@@ -6,7 +6,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class EmpsalaryApplication extends SpringBootServletInitializer 
+public class EmpsalaryApplication extends SpringBootServletInitializer 	//SpringBoot MVC startup class with the facility of Servlet container (a replacement of dispatcher servlet of Spring MVC)
 {
 
 	public static void main(String[] args) 
