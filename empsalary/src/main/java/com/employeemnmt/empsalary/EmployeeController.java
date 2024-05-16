@@ -63,7 +63,7 @@ public class EmployeeController
 		
 	}
 	
-	@RequestMapping(value="/viewemp", method=RequestMethod.GET)
+/*	@RequestMapping(value="/viewemp", method=RequestMethod.GET)
 	public String viewAllEmployee(Model model)
 	{
 		Employee e=eService.getEmployee();
@@ -84,6 +84,25 @@ public class EmployeeController
 			{
 				return "noempdata";
 			}
+		}
+		else
+		{
+			return "noempdata";
+		}
+		
+	}		*/
+	
+
+	@RequestMapping(value="/viewemp", method=RequestMethod.GET)
+	public String viewAllEmployee(Model model)
+	{
+		List<Employee> elst=eService.getAllEmployee();
+		
+		if(elst!=null)
+		{
+			model.addAttribute("emp", elst);
+		
+			return "empresult1";
 		}
 		else
 		{

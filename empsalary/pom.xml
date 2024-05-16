@@ -8,12 +8,14 @@
 		<version>3.1.10</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
 	<groupId>com.employeemnmt</groupId>
 	<artifactId>empsalary</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>empsalary</name>
 	<description>Demo project for Spring Boot</description>
+	
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -57,15 +59,14 @@
 		</dependency>	-->
 		
 <!-- 	dependency for JSTL like <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  -->
-		<dependency>
-    		<groupId>jakarta.servlet.jsp.jstl</groupId>
-    		<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-		</dependency>
+<!--		<dependency>	-->
+<!--    		<groupId>jakarta.servlet.jsp.jstl</groupId>	-->
+<!--    		<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>	-->
+<!--		</dependency>	-->		
 		
 		
 
-<!-- 	dependency required for spring bean validation using annotations of
-		jakarta.validation.constraints -->		
+<!-- 	dependency required for spring bean validation using annotations of jakarta.validation.constraints -->		
 		<dependency>
     		<groupId>org.hibernate.validator</groupId>
     		<artifactId>hibernate-validator</artifactId>
@@ -73,13 +74,20 @@
 
 
 
-<!-- 	dependency required for spring bean validation using annotations of
-		javax.validation -->
+<!-- 	dependency required for spring bean validation using annotations of javax.validation -->
+<!--		<dependency>	-->
+<!--			<groupId>javax.validation</groupId>	-->
+<!--			<artifactId>validation-api</artifactId>	-->
+<!--			<version>2.0.1.Final</version>	-->
+<!--		</dependency>	-->		
+		
+		
+<!-- 	dependency for JSTL1.2 core package for which the taglib is <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  -->		
 		<dependency>
-			<groupId>javax.validation</groupId>
-			<artifactId>validation-api</artifactId>
-			<version>2.0.1.Final</version>
-		</dependency>		
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
 		
 		
 		<dependency>

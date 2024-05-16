@@ -1,5 +1,8 @@
 package com.employeemnmt.empsalary;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -7,6 +10,12 @@ import org.springframework.stereotype.Service;
 public class EmployeeServiceImpl implements EmployeeService 
 {
 //	private Employee emp;
+	private List<Employee> elst;
+	
+	public EmployeeServiceImpl()
+	{
+		elst=new ArrayList<>();
+	}
 	
 //	public EmployeeServiceImpl()
 //	{
@@ -16,7 +25,7 @@ public class EmployeeServiceImpl implements EmployeeService
 	@Autowired
 	private Employee emp;
 	
-	public Employee getEmployee()
+/*	public Employee getEmployee()
 	{
 		if(emp!=null)
 		{
@@ -28,7 +37,7 @@ public class EmployeeServiceImpl implements EmployeeService
 			return null;
 		}
 		
-	}
+	}		*/
 	
 	public Employee addEmployee(Employee employee)
 	{
@@ -36,9 +45,9 @@ public class EmployeeServiceImpl implements EmployeeService
 		{
 			double bonus=calcBonus(employee);
 			employee.setBonus(bonus);
-			emp=employee;
-			System.out.println("emp in addEmployee "+emp);
-			return emp;
+			elst.add(employee);
+			System.out.println("employee in addEmployee "+employee);
+			return employee;
 		}
 		else
 		{
@@ -62,6 +71,26 @@ public class EmployeeServiceImpl implements EmployeeService
 			return 0.0;
 		}
 		
+	}
+	
+	public List<Employee> getAllEmployee()
+	{
+		if(elst!=null)
+		{
+			if(elst.size()>0)
+			{
+				System.out.println(elst);
+				return elst;
+			}
+			else
+			{
+				return null;
+			}
+		}
+		else
+		{
+			return null;
+		}
 	}
 	
 }
