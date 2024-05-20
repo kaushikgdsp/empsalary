@@ -111,6 +111,10 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		
+		<finalName>
+			empsalary
+		</finalName>
 	</build>
 
 </project>
