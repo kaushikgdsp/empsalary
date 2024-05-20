@@ -22,10 +22,22 @@
 	
 	<dependencies>
 	
+	<!-- 'spring-boot-starter-web' dependency has the embedded tomcat that allows any spring boot mvc JAR app to deploy 
+	into it without any external tomcat -->	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
+	<!-- 'spring-boot-starter-tomcat' dependency with scope 'provided' tells spring boot not to use the embeddeb tomcat
+	server for deployement, this is required for WAR packaged file of the application to be deployed in external tomcat
+	server-->
+	<dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-tomcat</artifactId>
+    	<scope>provided</scope>
+	</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -49,7 +61,6 @@
 		<dependency>
     		<groupId>org.apache.tomcat.embed</groupId>
     		<artifactId>tomcat-embed-jasper</artifactId>
-    		<scope>provided</scope>
 		</dependency>
 
 				
