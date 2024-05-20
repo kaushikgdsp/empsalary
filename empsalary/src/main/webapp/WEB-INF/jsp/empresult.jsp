@@ -30,8 +30,8 @@
 </tbody>
 </table>
 <br><br>
-<a href="/empinsertform">Back</a>
+<a href="/empsalary/empinsertform">Back</a>
 <br><br>
-<a href="/">Home</a>
+<a href="/empsalary">Home</a>
 </body>
 </html>

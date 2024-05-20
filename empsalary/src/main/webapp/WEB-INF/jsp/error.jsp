@@ -10,6 +10,6 @@
 <br><br>
 Error encountered, please try later.....
 <br><br>
-<a href="/">Home</a>
+<a href="/empsalary">Home</a>
 </body>
 </html>

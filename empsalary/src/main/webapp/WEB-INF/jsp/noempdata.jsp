@@ -10,6 +10,6 @@
 <br><br>
 Please enter employee details, then try to get employee data.....
 <br><br>
-<a href="/empinsertform">Back</a>
+<a href="/empsalary/empinsertform">Back</a>
 </body>
 </html>

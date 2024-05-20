@@ -8,7 +8,7 @@
 </head>
 <body>
 <p align="center" style="color: brown; font-size: 1.5cm">Employee details</p>
-<form:form action="/empadd" method="POST" modelAttribute="eform">
+<form:form action="/empsalary/empadd" method="POST" modelAttribute="eform">
    
    <table style="color: green; font-size: 0.5cm">
    <tr align="left"><th><form:label path="code">*Employee code: </form:label></th> 
@@ -28,6 +28,6 @@
    
 </form:form>
 <br><br>* compulsory fields<br><br><br>
-<a href="/">Home</a>
+<a href="/empsalary">Home</a>
 </body>
 </html>

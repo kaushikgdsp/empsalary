@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import jakarta.validation.Valid;
 
 @Controller
+@RequestMapping(value="/empsalary")
 public class EmployeeController 
 {
 
